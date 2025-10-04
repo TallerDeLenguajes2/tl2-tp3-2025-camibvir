@@ -1,0 +1,14 @@
+[
+  {
+    "NumeroPedido": 1001,
+    "ObservacionPedido": "Sin sal",
+    "Cliente": { "NombreCliente": "Pedro Martínez", "DireccionCliente": "Calle Verde 12", "TelefonoCliente": 456789, "ReferenciaDireccionCliente": "Depto 2" },
+    "Estado": 0
+  },
+  {
+    "NumeroPedido": 1002,
+    "ObservacionPedido": "Entrega rápida",
+    "Cliente": { "NombreCliente": "Lucía Fernández", "DireccionCliente": "Calle Azul 34", "TelefonoCliente": 987654, "ReferenciaDireccionCliente": "Frente a la plaza" },
+    "Estado": 0
+  }
+]

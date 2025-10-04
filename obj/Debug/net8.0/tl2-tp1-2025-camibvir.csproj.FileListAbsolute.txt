@@ -1,0 +1,15 @@
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.AssemblyInfoInputs.cache
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.AssemblyInfo.cs
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.csproj.CoreCompileInputs.cache
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.sourcelink.json
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\bin\Debug\net8.0\tl2-tp1-2025-camibvir.exe
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\bin\Debug\net8.0\tl2-tp1-2025-camibvir.deps.json
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\bin\Debug\net8.0\tl2-tp1-2025-camibvir.runtimeconfig.json
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\bin\Debug\net8.0\tl2-tp1-2025-camibvir.dll
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\bin\Debug\net8.0\tl2-tp1-2025-camibvir.pdb
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.dll
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\refint\tl2-tp1-2025-camibvir.dll
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.pdb
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\tl2-tp1-2025-camibvir.genruntimeconfig.cache
+C:\Users\win10\Desktop\tl2-tp1-2025-camibvir\obj\Debug\net8.0\ref\tl2-tp1-2025-camibvir.dll

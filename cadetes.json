@@ -1,0 +1,4 @@
+[
+  { "IdCadete": 1, "NombreCadete": "Carlos Pérez", "DireccionCadete": "Calle Falsa 123", "TelefonoCadete": 123456 },
+  { "IdCadete": 2, "NombreCadete": "María López", "DireccionCadete": "Avenida Siempreviva 742", "TelefonoCadete": 654321 }
+]
