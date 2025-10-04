@@ -67,7 +67,8 @@ class Program
                     Console.Write("Observación: ");
                     string obs = Console.ReadLine();
 
-                    cadeteria.darDeAltaPedido(nombre, direccion, tel, referencia, num, obs);
+                    bool ok = cadeteria.DarDeAltaPedido(nombre, direccion, tel, referencia, num, obs);
+                    Console.WriteLine(ok ? $"Pedido N°{num} dado de alta con éxito." : "Ya existe un pedido con ese número.");
                     break;
 
                 case "2":
@@ -77,7 +78,8 @@ class Program
                     Console.Write("ID cadete: ");
                     int idCad = int.Parse(Console.ReadLine());
 
-                    cadeteria.AsignarCadeteAPedido(numP, idCad);
+                    string resultadoAsignar = cadeteria.AsignarCadeteAPedido(numP, idCad);
+                    Console.WriteLine(resultadoAsignar);
                     break;
 
                 case "3":
@@ -106,7 +108,8 @@ class Program
                     Console.Write("ID cadete destino: ");
                     int idDest = int.Parse(Console.ReadLine());
 
-                    cadeteria.ReasignarPedido(numPR, idDest);
+                    string resultadoReasignar = cadeteria.ReasignarPedido(numPR, idDest);
+                    Console.WriteLine(resultadoReasignar);
                     break;
 
                 case "5":
@@ -115,9 +118,9 @@ class Program
 
                     foreach (var c in cadeteria.ListadoCadetes)
                     {
-                        float jornal = cadeteria.JornalACobrar(c.IdCadete);
-                        int entregados = cadeteria.Pedidos.FindAll(p => 
-                            p.CadeteAsignado != null && 
+                        float jornal = cadeteria.CalcularJornal(c.IdCadete);
+                        int entregados = cadeteria.Pedidos.FindAll(p =>
+                            p.CadeteAsignado != null &&
                             p.CadeteAsignado.IdCadete == c.IdCadete &&
                             p.Estado == Estado.Entregado).Count;
 

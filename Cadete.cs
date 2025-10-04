@@ -12,12 +12,12 @@ namespace EspacioCadete
         public string DireccionCadete {get; set;}
         public int TelefonoCadete {get; set;}
 
-        public Cadete(int id, string nombre, string direccion, int telefono)
+        public Cadete(int IdCadete, string NombreCadete, string DireccionCadete, int TelefonoCadete)
         {
-            IdCadete = id;
-            NombreCadete = nombre;
-            DireccionCadete = direccion;
-            TelefonoCadete = telefono;
+            this.IdCadete = IdCadete;
+            this.NombreCadete = NombreCadete;
+            this.DireccionCadete = DireccionCadete;
+            this.TelefonoCadete = TelefonoCadete;
         }
     }
 }

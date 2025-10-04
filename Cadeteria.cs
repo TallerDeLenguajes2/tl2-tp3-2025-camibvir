@@ -22,19 +22,19 @@ namespace EspacioCadeteria
             Pedidos = new List<Pedido>();
         }
 
-        // Alta manual de pedidos desde consola
-        public void darDeAltaPedido(string nombreCliente, string direccionCliente, int telefonoCliente,
+        public bool DarDeAltaPedido(string nombreCliente, string direccionCliente, int telefonoCliente,
                                     string referencia, int numeroPedido, string observacion)
         {
+            if (Pedidos.Exists(p => p.NumeroPedido == numeroPedido))
+                return false; // ya existe ese número
+
             var cliente = new Cliente(nombreCliente, direccionCliente, telefonoCliente, referencia);
             var pedido = new Pedido(numeroPedido, cliente, Estado.Pendiente, observacion);
             Pedidos.Add(pedido);
-
-            Console.WriteLine($"Pedido N°{numeroPedido} dado de alta con éxito.");
+            return true;
         }
 
-        // Asignar un cadete a un pedido
-        public void AsignarCadeteAPedido(int numeroPedido, int idCadete)
+        public string AsignarCadeteAPedido(int numeroPedido, int idCadete)
         {
             var pedido = Pedidos.Find(p => p.NumeroPedido == numeroPedido);
             var cadete = ListadoCadetes.Find(c => c.IdCadete == idCadete);
@@ -42,16 +42,12 @@ namespace EspacioCadeteria
             if (pedido != null && cadete != null)
             {
                 pedido.CadeteAsignado = cadete;
-                Console.WriteLine($"Pedido N°{numeroPedido} asignado a {cadete.NombreCadete}");
+                return $"Pedido N°{numeroPedido} asignado a {cadete.NombreCadete}";
             }
-            else
-            {
-                Console.WriteLine("Pedido o cadete no encontrado.");
-            }
+            return "Pedido o cadete no encontrado.";
         }
 
-        // Reasignar un pedido a otro cadete
-        public void ReasignarPedido(int numeroPedido, int idCadeteDestino)
+        public string ReasignarPedido(int numeroPedido, int idCadeteDestino)
         {
             var pedido = Pedidos.Find(p => p.NumeroPedido == numeroPedido);
             var cadeteDestino = ListadoCadetes.Find(c => c.IdCadete == idCadeteDestino);
@@ -59,16 +55,12 @@ namespace EspacioCadeteria
             if (pedido != null && cadeteDestino != null)
             {
                 pedido.CadeteAsignado = cadeteDestino;
-                Console.WriteLine($"Pedido N°{numeroPedido} reasignado a {cadeteDestino.NombreCadete}");
+                return $"Pedido N°{numeroPedido} reasignado a {cadeteDestino.NombreCadete}";
             }
-            else
-            {
-                Console.WriteLine("Pedido o cadete no encontrado.");
-            }
+            return "Pedido o cadete no encontrado.";
         }
 
-        // Calcular jornal de un cadete
-        public float JornalACobrar(int idCadete)
+        public float CalcularJornal(int idCadete)
         {
             int pedidosEntregados = Pedidos.FindAll(p =>
                 p.CadeteAsignado != null &&
@@ -77,6 +69,19 @@ namespace EspacioCadeteria
             ).Count;
 
             return pedidosEntregados * 500;
+        }
+
+        public List<string> ObtenerPedidos()
+        {
+            var lista = new List<string>();
+            foreach (var p in Pedidos)
+            {
+                string info = $"Pedido {p.NumeroPedido} - Estado: {p.Estado}";
+                if (p.CadeteAsignado != null)
+                    info += $" - Cadete: {p.CadeteAsignado.NombreCadete}";
+                lista.Add(info);
+            }
+            return lista;
         }
     }
 }

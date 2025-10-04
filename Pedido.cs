@@ -1,6 +1,6 @@
 using System;
-using ClienteApp;
 using EspacioCadete;
+
 namespace PedidoApp
 {
     public enum Estado
@@ -14,33 +14,40 @@ namespace PedidoApp
     public class Pedido
     {
         public int NumeroPedido { get; set; }
+        public string NombreCliente { get; set; }
+        public string DireccionCliente { get; set; }
+        public int TelefonoCliente { get; set; }
+        public string ReferenciaDireccionCliente { get; set; }
         public string? ObservacionPedido { get; set; }
-        public ClienteApp.Cliente Cliente { get; set; }
         public Estado Estado { get; set; }
+        public int? IdCadeteAsignado { get; set; }
 
-        public Cadete? CadeteAsignado{get; set;}
+        // Constructor vacío (para JSON)
+        public Pedido() {}
 
-        public Pedido(int numeroPedido, ClienteApp.Cliente cliente, Estado estado = Estado.Pendiente, string? observacion = null)
+        // Constructor completo
+        public Pedido(int numeroPedido, string nombreCliente, string direccionCliente, int telefonoCliente, string referencia, Estado estado = Estado.Pendiente, string? observacion = null)
         {
-            this.NumeroPedido = numeroPedido;
-            this.Cliente = cliente;
-            this.Estado = estado;
-            this.ObservacionPedido = observacion;
-            CadeteAsignado = null;
+            NumeroPedido = numeroPedido;
+            NombreCliente = nombreCliente;
+            DireccionCliente = direccionCliente;
+            TelefonoCliente = telefonoCliente;
+            ReferenciaDireccionCliente = referencia;
+            Estado = estado;
+            ObservacionPedido = observacion;
+            IdCadeteAsignado = null;
         }
-
         public string VerDireccionCliente()
         {
-            return Cliente.DireccionCliente;
+            return DireccionCliente;
         }
 
         public string VerDatosCliente()
         {
-            return $"Nombre: {Cliente.NombreCliente}\n" +
-            $"Dirección: {Cliente.DireccionCliente}\n" +
-            $"Teléfono: {Cliente.TelefonoCliente}\n" +
-            $"Referencia: {Cliente.ReferenciaDireccionCliente}";
+            return $"Nombre: {NombreCliente}\n" +
+                   $"Dirección: {DireccionCliente}\n" +
+                   $"Teléfono: {TelefonoCliente}\n" +
+                   $"Referencia: {ReferenciaDireccionCliente}";
         }
-
     }
 }

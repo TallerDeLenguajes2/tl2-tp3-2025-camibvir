@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\win10\\Desktop\\tl2-tp1-2025-camibvir\\tl2-tp1-2025-camibvir.csproj": {}
+    "C:\\Users\\win10\\Desktop\\tl2-tp3-2025-camibvir\\tl2-tp3-2025-camibvir.csproj": {}
   },
   "projects": {
-    "C:\\Users\\win10\\Desktop\\tl2-tp1-2025-camibvir\\tl2-tp1-2025-camibvir.csproj": {
+    "C:\\Users\\win10\\Desktop\\tl2-tp3-2025-camibvir\\tl2-tp3-2025-camibvir.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\win10\\Desktop\\tl2-tp1-2025-camibvir\\tl2-tp1-2025-camibvir.csproj",
-        "projectName": "tl2-tp1-2025-camibvir",
-        "projectPath": "C:\\Users\\win10\\Desktop\\tl2-tp1-2025-camibvir\\tl2-tp1-2025-camibvir.csproj",
+        "projectUniqueName": "C:\\Users\\win10\\Desktop\\tl2-tp3-2025-camibvir\\tl2-tp3-2025-camibvir.csproj",
+        "projectName": "tl2-tp3-2025-camibvir",
+        "projectPath": "C:\\Users\\win10\\Desktop\\tl2-tp3-2025-camibvir\\tl2-tp3-2025-camibvir.csproj",
         "packagesPath": "C:\\Users\\win10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\win10\\Desktop\\tl2-tp1-2025-camibvir\\obj\\",
+        "outputPath": "C:\\Users\\win10\\Desktop\\tl2-tp3-2025-camibvir\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\win10\\AppData\\Roaming\\NuGet\\NuGet.Config"

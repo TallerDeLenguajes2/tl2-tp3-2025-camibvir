@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("tl2-tp1-2025-camibvir")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("tl2-tp3-2025-camibvir")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e79fd6f45968879f365e2cc176430e8388a1292b")]
-[assembly: System.Reflection.AssemblyProductAttribute("tl2-tp1-2025-camibvir")]
-[assembly: System.Reflection.AssemblyTitleAttribute("tl2-tp1-2025-camibvir")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c9e9a8d8f2d11d8b72bf6c9ab1873549bb3205b")]
+[assembly: System.Reflection.AssemblyProductAttribute("tl2-tp3-2025-camibvir")]
+[assembly: System.Reflection.AssemblyTitleAttribute("tl2-tp3-2025-camibvir")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
